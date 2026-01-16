@@ -1914,3 +1914,50 @@ button.btn.btn-nfl.mt-3 {
   }
 
 }
+
+
+/* Start Slide */
+.cards-slider-wrap{
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.cards-slider{
+  display: flex;
+  gap: 1em;
+}
+
+@media (max-width: 767.98px){
+  .cards-slider{
+    --peek: 70px;
+    --side: 16px;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    padding: 8px var(--side);      
+    scroll-padding-left: var(--side);
+  }
+
+  .cards-slider__item{
+    flex: 0 0 calc(95% - var(--peek));
+    scroll-snap-align: start;
+  }
+
+  .cards-slider::-webkit-scrollbar{ display:none; }
+  .cards-slider{ scrollbar-width: none; }
+}
+
+@media (min-width: 768px){
+  .cards-slider{
+    overflow: visible;
+    padding: 0;
+  }
+
+  .cards-slider__item{
+    flex: 1 1 calc(33.333% - 16px);
+  }
+}
+/* End Slide */
