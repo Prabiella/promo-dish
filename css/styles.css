@@ -1965,13 +1965,15 @@ button.btn.btn-nfl.mt-3 {
 @media (max-width: 575px){
   .floating-call-btn{
     position: fixed;
-    bottom: 16px;                
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 1050;               
-    width: calc(100% - 32px);    
-    pointer-events: none;     
-    padding: 1em;   
+    z-index: 1050;
+    width: 100%;
+    pointer-events: none;
+    padding: 2.5em 1em;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
   }
 
   .floating-call-btn a{
