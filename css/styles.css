@@ -1921,7 +1921,7 @@ button.btn.btn-nfl.mt-3 {
   width: 100%;
 }
 
-@media (max-width: 767.98px){
+@media (max-width: 767px){
   .cards-slider-wrap{
     width: 100vw;
     margin-left: calc(50% - 50vw);
@@ -1942,7 +1942,7 @@ button.btn.btn-nfl.mt-3 {
   gap: 16px;
 }
 
-@media (max-width: 767.98px){
+@media (max-width: 767px){
   .cards-slider{
     --peek: 70px;
     --side: 16px;
@@ -1976,3 +1976,24 @@ button.btn.btn-nfl.mt-3 {
 }
 
 /* End Slide */
+
+/* Start Botón flotante */
+@media (max-width: 575px){
+  .floating-call-btn{
+    position: fixed;
+    bottom: 16px;                
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050;               
+    width: calc(100% - 32px);    
+    pointer-events: none;     
+    padding: 1em;   
+  }
+
+  .floating-call-btn a{
+    width: 100%;
+    max-width: 340px;            
+    pointer-events: auto;        
+  }
+}
+/* End Botón flotante */
