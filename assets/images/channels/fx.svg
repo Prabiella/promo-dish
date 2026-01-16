@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 85 85">
+  <defs>
+    <filter id="Rectángulo_18083" x="0" y="0" width="85" height="85" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_18806" data-name="Grupo 18806" transform="translate(-171 -1494)">
+    <g transform="matrix(1, 0, 0, 1, 171, 1494)" filter="url(#Rectángulo_18083)">
+      <rect id="Rectángulo_18083-2" data-name="Rectángulo 18083" width="67" height="67" rx="10" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="Grupo_18234" data-name="Grupo 18234" transform="translate(195 1522)">
+      <path id="Trazado_535" data-name="Trazado 535" d="M82.309,137.3H73.121L70.3,142.477,67.412,137.3l-22.96,0v23.15h8.055v-7.543h7.875v-6.289H52.507v-2.8H62.652l3.06,4.548-7.421,12.083H67.4l2.9-5.483,2.992,5.483h9.06l-7.419-12.083,7.381-11.07" transform="translate(-44.452 -137.303)" fill="#1a1818"/>
+    </g>
+  </g>
+</svg>

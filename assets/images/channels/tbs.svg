@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="85" height="85" viewBox="0 0 85 85">
+  <defs>
+    <filter id="Rectángulo_18087" x="0" y="0" width="85" height="85" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Grupo_18833" data-name="Grupo 18833" transform="translate(-523 -1494)">
+    <g transform="matrix(1, 0, 0, 1, 523, 1494)" filter="url(#Rectángulo_18087)">
+      <rect id="Rectángulo_18087-2" data-name="Rectángulo 18087" width="67" height="67" rx="10" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="Grupo_18237" data-name="Grupo 18237" transform="translate(545 1524)">
+      <path id="Trazado_548" data-name="Trazado 548" d="M213.9,138.672H182.322v14.26l5.417,5.414h31.124V143.632Zm-21.6,10.217h-2.83v6.6l-3.861-3.861v-10.14h3.861v3.533h2.83Zm7.562,6.957a5.646,5.646,0,0,1-3.325-1.079v.726h-3.274v-14h3.716v3.779a5.68,5.68,0,1,1,2.883,10.574m16.149-4c0,2.264-1.861,3.647-4.754,3.647H208.57l-2.843-2.845h5.254c.645,0,.921-.17.921-.462v-.03c0-.31-.338-.477-1.492-.708-2.416-.492-4.541-1.185-4.541-3.465v-.03c0-2.046,1.6-3.632,4.571-3.632h2.043l2.825,2.848h-4.549c-.538,0-.784.185-.784.447v.03c0,.292.292.477,1.429.693,2.757.508,4.6,1.307,4.6,3.477Z" transform="translate(-182.322 -138.672)" fill="#089cdc"/>
+      <path id="Trazado_549" data-name="Trazado 549" d="M190.426,142.422A1.974,1.974,0,1,0,192.4,144.4a1.973,1.973,0,0,0-1.972-1.975" transform="translate(-172.889 -132.904)" fill="#089cdc"/>
+      <path id="Trazado_550" data-name="Trazado 550" d="M197.769,146.1h-.452v-.233h1.158v.233h-.453v1.194h-.253Z" transform="translate(-159.256 -127.611)" fill="#089cdc"/>
+      <path id="Trazado_551" data-name="Trazado 551" d="M197.878,145.863h.266l.434.674.436-.674h.266v1.426h-.25v-1.024l-.452.672h-.007l-.445-.666v1.017h-.248Z" transform="translate(-158.393 -127.611)" fill="#089cdc"/>
+    </g>
+  </g>
+</svg>

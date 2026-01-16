@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="57" height="58" viewBox="0 0 57 58">
+  <g id="Grupo_18590" data-name="Grupo 18590" transform="translate(-0.187)">
+    <rect id="Rectángulo_18105" data-name="Rectángulo 18105" width="57" height="58" transform="translate(0.187)" fill="none"/>
+    <g id="Grupo_18469" data-name="Grupo 18469" transform="translate(18.242 14.347)">
+      <path id="Trazado_1297" data-name="Trazado 1297" d="M85.312,252.706a.941.941,0,1,1,0-1.881h8.982a.865.865,0,0,1,.7.288.985.985,0,0,1,.242.652,1.15,1.15,0,0,1-.09.456L87.224,269.7a.957.957,0,0,1-.85.485.852.852,0,0,1-.683-.3.968.968,0,0,1-.258-.638.921.921,0,0,1,.121-.454l7.161-16.083Z" transform="translate(-83.097 -242.835)" fill="#f5720e"/>
+      <path id="Trazado_1298" data-name="Trazado 1298" d="M87.036,272.12a2.136,2.136,0,0,1-1.656-.754,2.252,2.252,0,0,1-.558-1.461,2.165,2.165,0,0,1,.285-1.077l6.311-14.187H85.974a2.214,2.214,0,1,1,0-4.428h8.982a2.114,2.114,0,0,1,1.669.735,2.279,2.279,0,0,1,.544,1.477,2.447,2.447,0,0,1-.19.95l-7.934,17.51A2.282,2.282,0,0,1,87.036,272.12Z" transform="translate(-83.759 -243.497)" fill="#f5720e"/>
+      <text id="SIETE" transform="translate(22.171 29.563) rotate(-90)" fill="#f5720e" font-size="9" font-family="Helvetica" letter-spacing="0.04em"><tspan x="0" y="0">SIETE</tspan></text>
+    </g>
+  </g>
+</svg>
