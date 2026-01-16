@@ -1918,14 +1918,28 @@ button.btn.btn-nfl.mt-3 {
 
 /* Start Slide */
 .cards-slider-wrap{
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  width: 100%;
+}
+
+@media (max-width: 767.98px){
+  .cards-slider-wrap{
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+}
+
+@media (min-width: 768px){
+  .cards-slider-wrap{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .cards-slider{
   display: flex;
-  gap: 1em;
+  gap: 16px;
 }
 
 @media (max-width: 767.98px){
@@ -1937,12 +1951,12 @@ button.btn.btn-nfl.mt-3 {
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
 
-    padding: 8px var(--side);      
+    padding: 8px var(--side);
     scroll-padding-left: var(--side);
   }
 
   .cards-slider__item{
-    flex: 0 0 calc(95% - var(--peek));
+    flex: 0 0 calc(100% - var(--peek));
     scroll-snap-align: start;
   }
 
@@ -1953,11 +1967,12 @@ button.btn.btn-nfl.mt-3 {
 @media (min-width: 768px){
   .cards-slider{
     overflow: visible;
-    padding: 0;
+    padding: 0;               
   }
 
   .cards-slider__item{
     flex: 1 1 calc(33.333% - 16px);
   }
 }
+
 /* End Slide */
