@@ -874,7 +874,7 @@ hr{
 
 .widgetWtApp {
   position: fixed;
-  bottom: 0px;
+  bottom: 15px;
   right: 0;
   z-index: 9999;
 }
