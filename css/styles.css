@@ -1808,7 +1808,7 @@ button.btn.btn-nfl.mt-3 {
 
 }
 
-.btn-contratar {
+/* .btn-contratar {
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -1822,6 +1822,75 @@ button.btn.btn-nfl.mt-3 {
   box-shadow: 0 10px 30px rgba(227,28,35,.4);
   z-index: 99999;
 }
+
+ */
+
+ .btn-contratar {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #e31c23;
+  border-radius: 40px;
+  padding: 16px 48px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+  box-shadow: 0 10px 30px rgba(227,28,35,.4);
+  z-index: 99999;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+/* Estados por defecto (móvil) */
+.texto-desktop {
+  display: none;
+}
+
+.texto-movil {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.texto-movil:hover {
+ color: #fff;
+}
+
+.texto-movil:active {
+  color: #fff;
+ }
+
+/* Desktop */
+@media (min-width: 768px) {
+  .texto-desktop {
+    display: inline;
+  }
+
+  .texto-movil {
+    display: none;
+  }
+
+  /* En desktop desactivamos acción tel */
+  .btn-contratar {
+    pointer-events: none;
+    cursor: default;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 /* ====== RESPONSIVE ====== */
 @media (max-width: 991px) {
