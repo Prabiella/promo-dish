@@ -1969,20 +1969,48 @@ button.btn.btn-nfl.mt-3 {
   .floating-call-btn{
     position: fixed;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1050;
+    left: 0;
     width: 100%;
-    pointer-events: none;
-    padding: 2.5em 1em;
+    z-index: 1050;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px 16px 20px;
     background: rgba(0,0,0,0.6);
     backdrop-filter: blur(4px);
   }
 
-  .floating-call-btn a{
+  .floating-call-btn .btn-red-cards{
     width: 100%;
-    max-width: 340px;            
-    pointer-events: auto;        
+    max-width: 150px;
+    text-align: center;
+    margin: 0;
+  }
+  .widgetWtApp{
+    position: fixed;
+    bottom: 20px;       
+    right: 0.5em;
+
+    z-index: 1050;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    width: auto;
+  }
+
+  .widgetWtApp .hover-text{
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+  }
+}
+@media (max-width: 375px){
+  .floating-call-btn {
+    justify-content: start;
   }
 }
 /* End Botón flotante */
