@@ -2066,8 +2066,8 @@ button.btn.btn-nfl.mt-3 {
     z-index: 1050;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: start;
 
     padding: 14px 16px 20px;
     background: rgba(0,0,0,0.6);
