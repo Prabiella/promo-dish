@@ -94,6 +94,12 @@
                   </a>
                 </div>
               </div>
+
+              <div class=" my-3 me-4 ">
+                  <span>LLAMA AL <strong>55 55 123 123</strong></span>
+           
+              </div>
+
             </div>
           </div>
           <input type="checkbox" id="check" />
@@ -171,6 +177,11 @@
               </a>
             </div>
           </li>
+          <li class="nav call-mobile">
+            <a href="tel:5555123123">
+              Llama al 55 55 123 123
+            </a>
+          </li>
       </ul>
   </div>
         </div>
@@ -186,9 +197,9 @@
       
     
         <!-- Desktop -->
-        <h1 class="font-poppins fw-bold mt-5 mb-3 text-center d-none d-md-block">
+        <!-- <h1 class="font-poppins fw-bold mt-5 mb-3 text-center d-none d-md-block">
           <i class="bi bi-telephone"></i> LLAMA AL 55 55 123 123
-        </h1>
+        </h1> -->
         <hr class="hr-red" style="display: block;">
         <h3 class="font-poppins fw-bold mt-3 mb-3 text-center">TU PAQUETE INCLUYE <i class="bi bi-arrow-down-short"></i></h3>
         
@@ -224,18 +235,104 @@
         </article>
         </div>
       </div>
-
-      
-
-
     </div>
+
+    <div class="container">
+      <div class="row">
+          <div class="col-md-8 mx-auto">
+  
+              <!-- Inicia el formulario de contacto -->
+
+               <section id="lead-section" class="my-5">
+                <div class="row justify-content-center">
+                  <div class="col-md-9 page_registro">
+              
+                    <h1 class="font-poppins fw-bold mt-3 mb-3 text-center">
+                      SOLICITA INFORMACIÓN DEL PAQUETE DISH
+                     </h1>
+               
+                    <h2 class="text-center mb-3 title-form"> Completa el formulario y un asesor se pondrá en contacto contigo</h2>
+                    <h6 class="mb-5 text-center subtitle-form">
+                      Streaming + Telefonía Celular + TV por $335 al mes.
+                    </h6>
+              
+                    <form class="aContact" id="leadCampaign" autocomplete="off">
+              
+                      <div class="form-group mb-3">
+                        <label for="leadName">Nombre completo*</label>
+                        <input 
+                          type="text" 
+                          id="leadName" 
+                          name="leadName"
+                          class="form-control lead_nombre" 
+                          placeholder="Ej. Juan Pérez" 
+                          required
+                        >
+                      </div>
+              
+                      <div class="form-group mb-3">
+                        <label for="leadMail">Correo electrónico*</label>
+                        <input 
+                          type="email"  
+                          id="leadMail" 
+                          name="leadMail"
+                          class="form-control lead_mail" 
+                          placeholder="Ej. correo@ejemplo.com" 
+                          required
+                        >
+                      </div>
+              
+                      <div class="form-group mb-3">
+                        <label for="leadPhone">Teléfono de contacto*</label>
+                        <input 
+                          type="tel" 
+                          id="leadPhone" 
+                          name="leadPhone"
+                          class="form-control lead_numero" 
+                          placeholder="Ej. 5512-3456-78" 
+                          required
+                        >
+                        <small id="phoneHelp" class="form-text">
+                          Ingresa un número de 10 dígitos.
+                        </small>
+                      </div>
+              
+                      <div class="form-group mb-4">
+                        <label for="leadCP">Código postal*</label>
+                        <input 
+                          type="number" 
+                          id="leadCP"  
+                          name="leadCP"
+                          class="form-control lead_cp" 
+                          placeholder="Ej. 01234" 
+                          required
+                        >
+                      </div>
+              
+                      <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg px-5 btn-red-cards">
+                          Solicitar información
+                        </button>
+                      </div>
+              
+                    </form>
+                  </div>
+                </div>
+              </section>
+              
+          
+          
+         </div>
+      </div>
+  </div>
+  
     
     <div>
       <hr class="hr-red mb-5" style="display: block;">
     
       <!-- Desktop -->
       <h1 class="font-poppins fw-bold mt-3 mb-3 text-center d-none d-md-block">
-        PÍDELO AHORA AL 55 55 123 123
+       TAMBIÉN PUEDES ENVÍARNOS UN WHATSAPP AL 55-5484-0802
       </h1>
       <h1 class="font-poppins fw-bold mt-3 mb-3 text-center d-none d-md-block">
         Y SUSCRÍBETE POR SÓLO $100
@@ -1007,25 +1104,25 @@
 
 
 
-
-<section>
+<!-- sECCION MOVIL MODAL -->
+<!-- <section>
 
   <div class="floating-call-btn d-sm-none">
 
-    <!-- TEXTO -->
+ 
     <span class="call-title col-12" style="font-size: 1.4rem;">
       SUSCRÍBETE AHORA 
     </span>
     <span class="call-title col-12">llámanos o escríbenos</span>
 
-    <!-- BOTÓN TEL -->
+   
     <a href="tel:5555123123" class="btn-red-cards mt-3">
       <i class="bi bi-telephone-fill"></i><span class="ml-3"> Llamar ahora</span>
     </a>
 
   </div>
 
-      <!-- WHATSAPP -->
+     
       <div class="widgetWtApp mt-3 d-flex justify-content-center">
         <div class="hover-text text-center p-3">
           🥳 🎉 Quiero contratar mi paquete de <br/>
@@ -1039,7 +1136,7 @@
         </a>
       </div>
 
-</section>
+</section> -->
 
 
 
@@ -1190,6 +1287,20 @@
 
 
 
+  
+
+
+
+
+
+
+<script src="assets/js/leadValidator.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      new LeadValidator("leadCampaign");
+  });
+  </script>
 
 
   </body>
