@@ -115,7 +115,8 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', sans-serif;
+
 }
 .contain{
     max-width: 1440px;
@@ -1578,18 +1579,15 @@ button.btn.btn-nfl.mt-3 {
 .btn-red-cards{
   transition: box-shadow .2s ease-in-out;
   min-width: 160px;
-  color:white;
+  color: white;
   border-color: transparent;
-  background: #e11b27;
+  background: #FF0000;
   border-radius: 9999px;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-  font-weight: 600; 
-  box-shadow: 0 0 15px 5px rgba(214,33,46,.5);
+  padding: 0.5em 1em;
+  font-weight: 600;
   text-decoration: none;
 }
+
 .btn-red-cards:hover {
   background-color: black;
   color: white;
@@ -1955,9 +1953,8 @@ button.btn.btn-nfl.mt-3 {
 
 .floating-call-btn {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+ gap: 0.3em;
 }
 
 .call-title {
@@ -2000,6 +1997,13 @@ button.btn.btn-nfl.mt-3 {
   width: 100%;
 }
 
+.cards-slider__item{
+  background-image: url(/assets/images/img/back-items.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 26px;
+}
+
 @media (max-width: 767px){
   .cards-slider-wrap{
     width: 100vw;
@@ -2019,11 +2023,12 @@ button.btn.btn-nfl.mt-3 {
 .cards-slider{
   display: flex;
   gap: 16px;
+  align-items: stretch;
 }
 
 @media (max-width: 767px){
   .cards-slider{
-    --peek: 70px;
+    --peek: 45px;
     --side: 16px;
 
     overflow-x: auto;
@@ -2059,19 +2064,13 @@ button.btn.btn-nfl.mt-3 {
 /* Start Botón flotante */
 @media (max-width: 575px){
   .floating-call-btn{
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    z-index: 1050;
 
     display: flex;
     justify-content: start;
     align-items: start;
 
     padding: 14px 16px 20px;
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(4px);
   }
 
   .floating-call-btn .btn-red-cards{
@@ -2106,3 +2105,138 @@ button.btn.btn-nfl.mt-3 {
   }
 }
 /* End Botón flotante */
+
+
+
+.info-card{
+  position: relative;
+  border-radius: 26px;
+  overflow: hidden;
+  min-height: 440px;
+  padding: 1em 0.75em;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+.info-card > *{ position: relative; z-index: 1; }
+
+.info-card__top{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  min-height: 28px;
+}
+.info-card__top--right{ justify-content:flex-end; }
+
+.info-card__brand{
+  width: auto;
+}
+
+.info-card__body{
+  padding-top: 6px;
+  flex: 1;
+}
+
+.info-card__body--center{
+  text-align:center;
+}
+
+.info-card__body--center .info-card__icon{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.info-card__icon {
+  width: 20%;
+  height: auto;
+}
+
+.info-card__icon_cel{
+  width: 15%;
+  height: auto;
+}
+
+.info-card__title{
+  margin: 0 0 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.05;
+  font-size: min(max(2.6vw, 1.5em), 2.8em);
+  letter-spacing: .3px;
+}
+
+.info-card__channels{
+  width: 100%;
+  height: auto;
+  display:block;
+  margin: 10px 0 12px;
+  filter: drop-shadow(0 10px 22px rgba(0,0,0,.20));
+}
+
+.info-card__text{
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+.info-card__text--big{
+  font-size: min(max(2vw, 1em), 1.7em);
+  font-weight: 400;
+}
+
+.info-card__badge{
+  padding: 0 2em;
+  border-radius: 10px;
+  background: #FFD900;
+  color: #000;
+  text-transform: uppercase;
+  width: fit-content;
+  font-weight: 500;
+  font-size: min(max(1.5vw, 1em), 1.5em);
+}
+
+.info-card__footer{
+  display:flex;
+  justify-content:center;
+  padding-top: 10px;
+}
+.btn-call {
+  background: #380202;
+    color: white;
+    text-decoration: none;
+    padding: 1em 2em;
+    border-radius: 13px;
+    width: 120px;
+    height: 100px;
+}
+
+.btn-callme {
+  background: #8E0202;
+  color: white;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 13px;
+  width: 120px;
+  height: 100px;
+
+}
+
+.btn-whats-contact {
+  background: #14C407;
+  color: white;
+  text-decoration: none;
+  padding: 1em 2em;
+  border-radius: 13px;
+  width: 120px;
+  height: 100px;
+  font-size: 1em;
+}
+
+a:hover {
+  color: white !important;
+}

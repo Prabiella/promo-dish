@@ -196,34 +196,108 @@
 
       <div class="container cards-slider-wrap pt-4 pb-5 px-0">
         <div class="cards-slider" aria-label="Banners informativos">
-        <article class="cards-slider__item">
-          <img src="./imagenes/desktop/lineacelular_banner.webp" class="border-25 img-fluid" alt="...">
-          <div class="d-flex justify-content-center mt-3">
-            <button class="btn-red-cards text-center" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Conoce más
-            </button>
-          </div>
-        </article>
       
-        <article class="cards-slider__item">
-          <img src="./imagenes/desktop/canales_tv.webp" class="border-25 img-fluid" alt="...">
-          <div class="d-flex justify-content-center mt-3">
-            <button class="btn-red-cards text-center" data-bs-toggle="modal" data-bs-target="#CanalesdeTV">
-              Conoce más
-            </button>
-          </div>
-        </article>
+          <!-- TV -->
+          <article class="cards-slider__item">
+            <section class="info-card border-25 info-card--streaming">
+              <div class="info-card__top">
+                <img class="info-card__brand" src="./assets/images/logo/dish.svg" alt="dish">
+              </div>
       
-        <article class="cards-slider__item">
-          <img src="./imagenes/desktop/streaming.webp" class="border-25 img-fluid" alt="...">
-          <div class="d-flex justify-content-center mt-3">
-            <button class="btn-red-cards text-center" data-bs-toggle="modal" data-bs-target="#Canalesdestreaming">
-              Conoce más
-            </button>
-          </div>
-        </article>
+              <div class="info-card__body">
+                <div class="d-flex justify-content-center align-items-center gap-3 py-3">
+                  <img class="info-card__icon" src="./assets/images/img/smartv.png" alt="smart tv">
+      
+                  <h3 class="info-card__title">
+                    82 CANALES<br>
+                    DE TV
+                  </h3>
+                </div>
+      
+                <img class="info-card__channels px-3" src="./assets/images/img/canales-dish.png" alt="Canales incluidos de streaming" loading="lazy">
+      
+              </div>
+      
+              <div class="info-card__footer pt-3 pb-4">
+                <button class="btn-red-cards text-center" data-bs-toggle="modal" data-bs-target="#Canalesdestreaming">
+                  Conoce más
+                </button>
+              </div>
+            </section>
+          </article>
+      
+      
+          <!-- LÍNEA CELULAR -->
+          <article class="cards-slider__item">
+            <section class="info-card border-25 info-card--linea" aria-label="Línea celular mensual">
+              <div class="info-card__top info-card__top--center">
+                <img class="info-card__brand" src="./assets/images/logo/freedompop.svg" alt="FreedomPop">
+              </div>
+      
+              <div class="info-card__body">
+                <div class="d-flex justify-content-center align-items-center gap-3 py-3">
+                  <img class="info-card__icon_cel" src="./assets/images/img/cel.png" alt="celular">
+      
+                  <h3 class="info-card__title">
+                    LÍNEA<br>
+                    CELULAR<br>
+                    MENSUAL
+                  </h3>
+                </div>
+      
+                <p class="info-card__text info-card__text--big text-center">
+                  <img src="assets/images/logo/icon-whatsapp.svg" alt="WhatsApp">
+                  WhatsApp ilimitado<br>
+                  <b>3 GB para navegar</b>
+                </p>
+
+                <div class="d-flex justify-content-center align-items-center py-3">
+                  <span class="info-card__badge">6 GB X 3 MESES</span>
+                </div>
+              </div>
+      
+              <div class="info-card__footer pt-3 pb-4">
+                <button class="btn-red-cards text-center" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Conoce más
+                </button>
+              </div>
+            </section>
+          </article>
+      
+      
+          <!-- STREAMING -->
+          <article class="cards-slider__item">
+            <section class="info-card border-25 info-card--tv" aria-label="82 canales de TV">
+              <div class="info-card__top info-card__top--right">
+                <img class="info-card__brand" src="./assets/images/logo/mvshub.svg" alt="mvshub">
+              </div>
+      
+              <div class="info-card__body">
+                <div class="d-flex justify-content-center align-items-center gap-3 py-3">
+                  <img class="info-card__icon" src="./assets/images/img/tv-play.png" alt="tv">
+      
+                  <h3 class="info-card__title">
+                    MÁS DE 120<br>
+                    CANALES DE<br>
+                    STREAMING
+                  </h3>
+                </div>
+      
+                <img class="info-card__channels" src="./assets/images/img/canales-mvshub.png" alt="Canales incluidos de TV" loading="lazy">
+              </div>
+      
+              <div class="info-card__footer pt-3 pb-4">
+                <button class="btn-red-cards text-center" data-bs-toggle="modal" data-bs-target="#CanalesdeTV">
+                  Conoce más
+                </button>
+              </div>
+            </section>
+          </article>
+      
         </div>
       </div>
+      
+      
 
       
 
@@ -243,11 +317,48 @@
     
       <!-- Mobile -->
       <h1 class="font-poppins fw-bold mt-3 mb-3 text-center d-block d-md-none">
-       PÍDELO AHORA
+       PÍDELO AHORA Y SUSCRÍBETE <br> POR SOLO $100
       </h1>
-      <h2 class="font-poppins fw-bold mb-3 text-center d-block d-md-none">
-        Y SUSCRÍBETE POR SÓLO $100
-      </h2>
+      <section>
+
+        <div class="floating-call-btn d-sm-none ">
+      
+          <!-- BOTÓN LLAMAR -->
+          <a href="tel:5555123123" class="btn-call mt-3 d-flex flex-column align-items-center">
+            <img class="btn-icon" src="./assets/images/img/llamar.svg" alt="Llamar">
+            <span class="ml-3"> Llamar</span>
+          </a>
+
+          <!-- BOTÓN LLAMAME -->
+          <a href="tel:5555123123" class="btn-callme mt-3 d-flex flex-column align-items-center">
+            <img class="btn-icon" src="./assets/images/img/llamame.svg" alt="Llamar">
+            <span class="ml-3"> Llámame</span>
+          </a>
+
+          <!-- BOTÓN WHATS -->
+          <a href="https://api.whatsapp.com/send?phone=5554840802&text=Quiero%20contratar%20mi%20paquete%20de%20streaming%20%2B%20celular%20%2B%20TV%20por%20%24335%20al%20mes"
+          target="_blank" class="btn-whats-contact mt-3 d-flex flex-column align-items-center">
+            <img class="btn-icon" src="./assets/images/img/whatsapp.svg" alt="Llamar">
+            <span class="ml-3"> WhatsApp</span>
+          </a>
+      
+        </div>
+      
+            <!-- WHATSAPP -->
+            <!-- <div class="widgetWtApp mt-3 d-flex justify-content-center">
+              <div class="hover-text text-center p-3">
+                🥳 🎉 Quiero contratar mi paquete de <br/>
+                streaming + celular + TV por $335 al mes
+              </div>
+        
+              <a href="https://api.whatsapp.com/send?phone=5554840802&text=Quiero%20contratar%20mi%20paquete%20de%20streaming%20%2B%20celular%20%2B%20TV%20por%20%24335%20al%20mes"
+                 target="_blank"
+                 class="ms-3">
+                <img src="assets/icons/whats.png" alt="WhatsApp">
+              </a>
+            </div> -->
+      
+      </section>
       
     </div>
     
@@ -1008,38 +1119,7 @@
 
 
 
-<section>
 
-  <div class="floating-call-btn d-sm-none">
-
-    <!-- TEXTO -->
-    <span class="call-title col-12" style="font-size: 1.4rem;">
-      SUSCRÍBETE AHORA 
-    </span>
-    <span class="call-title col-12">llámanos o escríbenos</span>
-
-    <!-- BOTÓN TEL -->
-    <a href="tel:5555123123" class="btn-red-cards mt-3">
-      <i class="bi bi-telephone-fill"></i><span class="ml-3"> Llamar ahora</span>
-    </a>
-
-  </div>
-
-      <!-- WHATSAPP -->
-      <div class="widgetWtApp mt-3 d-flex justify-content-center">
-        <div class="hover-text text-center p-3">
-          🥳 🎉 Quiero contratar mi paquete de <br/>
-          streaming + celular + TV por $335 al mes
-        </div>
-  
-        <a href="https://api.whatsapp.com/send?phone=5554840802&text=Quiero%20contratar%20mi%20paquete%20de%20streaming%20%2B%20celular%20%2B%20TV%20por%20%24335%20al%20mes"
-           target="_blank"
-           class="ms-3">
-          <img src="assets/icons/whats.png" alt="WhatsApp">
-        </a>
-      </div>
-
-</section>
 
 
 
