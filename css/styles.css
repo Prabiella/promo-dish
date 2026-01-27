@@ -2628,7 +2628,7 @@ body {
   width: fit-content;
 }
 
-.aContact {
+.modal-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2636,12 +2636,16 @@ body {
   padding: 0 2em 2em;
 }
 
-.aContact .form-group {
+.modal-contact {
   width: 100%;
 }
 
 .no-after::after {
   content: none !important;
+}
+
+.dev-text {
+  font-size: min(max(3vw, 1em), 1.25em);
 }
 
 
