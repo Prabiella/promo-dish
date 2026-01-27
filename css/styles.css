@@ -2585,8 +2585,8 @@ body {
 }
 
 .footer-social img {
-  width: 18px;
-  height: 18px;
+  width: 35px;
+  height: 35px;
 }
 
 .footer-bottom {
@@ -2598,6 +2598,50 @@ body {
   font-size: .68rem;
   line-height: 1.35;
   margin: 0;
+}
+
+/* Modal Form */
+.callme-title {
+  font-size: 23px;
+  padding: 1em;
+  color: #1f1f1f;
+}
+
+.callme-modal .form-control {
+  border-radius: 10px;
+  background: #f2f2f2;
+  border: 1px solid #eee;
+}
+
+.callme-modal .form-check-label {
+  font-size: 12px;
+  color: #555;
+}
+
+.btn-callme-submit {
+  border-radius: 999px;
+  font-weight: 500;
+  padding: 1.5em 4em;
+  background: #E01D27;
+  border: none;
+  color: #fff;
+  width: fit-content;
+}
+
+.aContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 0 2em 2em;
+}
+
+.aContact .form-group {
+  width: 100%;
+}
+
+.no-after::after {
+  content: none !important;
 }
 
 
@@ -2630,7 +2674,7 @@ body {
   .footer-contact {
     justify-content: center;
   }
-  
+
 }
 
 
@@ -2650,4 +2694,3 @@ body {
   }
 
 }
-
