@@ -641,7 +641,6 @@ body {
 
 }
 
-.button,
 .menu {
   position: absolute;
   transition: all 0.5s ease-in-out;
@@ -654,6 +653,7 @@ body {
 .button {
   right: 0px;
   cursor: pointer;
+  padding-top: 1em;
 }
 
 .menu {
@@ -2691,6 +2691,14 @@ body {
   .btn-whats-contact {
     width: 100px;
     height: 90px;
+  }
+
+}
+
+@media (max-width: 320px) {
+
+  header a {
+    font-size: 0.8em;
   }
 
 }
