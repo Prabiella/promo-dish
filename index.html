@@ -39,9 +39,9 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <header id="header" class="">
-    <div class="d-flex flex-row justify-content-between align-items-start">
-      <a class="d-flex align-items-center mt-1 mx-5" alt="home" href="https://www.dish.com.mx/" data-v-2a977a16>
-        <h1 class="m-0" data-v-2a977a16>
+    <div class="d-flex flex-row justify-content-between align-items-center px-3 px-lg-0">
+      <a class="d-flex align-items-center mt-1 col-2" alt="home" href="https://www.dish.com.mx/" data-v-2a977a16>
+        <h1 class="m-0 pt-2 pt-lg-0 pb-lg-2 mx-lg-5" data-v-2a977a16>
           <img src="https://www.dish.com.mx/img/logo.057314c1.svg" alt="Dish logo" title="Dish"
             class="pl-4 xs:pl-0 sm:pl-0" id="dish_logo" data-v-2a977a16>
         </h1>
@@ -156,7 +156,7 @@
         <img src="  https://www.dish.com.mx/img/icon-menu.e04c99b0.svg" alt="">
       </label>
 
-      <div class="menu">
+      <div class="menu col-2">
         <div class="header-nav-mobile d-flex flex-column">
           <div class="close">
             <input type="checkbox" id="check" />
@@ -352,6 +352,7 @@
 
               <img class="info-card__channels" src="./assets/images/img/canales-mvshub.png"
                 alt="Canales incluidos de TV" loading="lazy">
+                <h4 class="text-center dev-text">5 dispositivos a la vez <br> ReplayTV: Pausa y repite</h4>
             </div>
 
             <div class="info-card__footer pt-0 pb-4">
@@ -382,69 +383,49 @@
     <!-- Inicia el formulario de contacto -->
 
     <section id="lead-section" class="p-4">
-            <div class="row justify-content-center">
-              <div class="page_registro d-flex flex-column flex-lg-row align-items-start">
+      <div class="row justify-content-center">
+        <div class="page_registro d-flex flex-column flex-lg-row align-items-start">
 
-                <h4 class="col-lg-5 col-xl-4 font-poppins fw-bold">
-                  Déjanos tus datos
-                 y un asesor te contactará
-                </h4>
+          <h4 class="col-lg-5 col-xl-4 font-poppins fw-bold">
+            Déjanos tus datos
+            y un asesor te contactará
+          </h4>
 
 
-                <form class="aContact w-100" id="leadCampaign" autocomplete="off">
+          <form class="aContact w-100" id="leadCampaign" autocomplete="off">
 
-                  <div class="d-flex gap-3 align-items-start justify-content-center flex-wrap">
-                    <div class="form-group col-12 col-md-5">
-                      <input
-                        type="text"
-                        id="leadName"
-                        name="leadName"
-                        class="form-control lead_nombre"
-                        placeholder="Nombre"
-                        required
-                      >
-                    </div>
-                
-                    <div class="form-group col-12 col-md-6">
-                      <input
-                        type="tel"
-                        id="leadPhone"
-                        name="leadPhone"
-                        class="form-control lead_numero"
-                        placeholder="Teléfono"
-                        required
-                      >
-                
-                      <div class="form-check mt-2 text-start">
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          id="privacyCheck"
-                          name="privacyCheck"
-                          required
-                        >
-                        <label class="form-check-label" for="privacyCheck">
-                          He leído y acepto el
-                          <a href="https://secciones.dish.com.mx/avisos-de-privacidad.html" target="_blank">aviso de privacidad</a>.
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                
-                  <div class="col-6 d-flex justify-content-center mt-4">
-                    <button
-                      type="submit"
-                      class="btn btn-primary btn-lg px-5 btn-red-form"
-                    >
-                      Contáctame
-                    </button>
-                  </div>
-                
-                </form>
-                
-                
+            <div class="d-flex gap-3 align-items-start justify-content-center flex-wrap">
+              <div class="form-group col-12 col-md-5">
+                <input type="text" id="leadName" name="leadName" class="form-control lead_nombre" placeholder="Nombre"
+                  required>
+              </div>
+
+              <div class="form-group col-12 col-md-6">
+                <input type="tel" id="leadPhone" name="leadPhone" class="form-control lead_numero"
+                  placeholder="Teléfono" required>
+
+                <div class="form-check mt-2 text-start">
+                  <input class="form-check-input" type="checkbox" id="privacyCheck" name="privacyCheck" required>
+                  <label class="form-check-label" for="privacyCheck">
+                    He leído y acepto el
+                    <a href="https://secciones.dish.com.mx/avisos-de-privacidad.html" target="_blank">aviso de
+                      privacidad</a>.
+                  </label>
+                </div>
               </div>
             </div>
+
+            <div class="col-6 d-flex justify-content-center mt-4">
+              <button type="submit" class="btn btn-primary btn-lg px-5 btn-red-form">
+                Contáctame
+              </button>
+            </div>
+
+          </form>
+
+
+        </div>
+      </div>
     </section>
 
     <section>
@@ -458,11 +439,12 @@
           <span class="ml-3"> Llamar</span>
         </a>
 
-        <!-- BOTÓN LLAMAME -->
-        <a href="tel:5555123123" class="btn-callme mt-3 d-flex flex-column align-items-center">
+        <!-- BOTÓN LLÁMAME -->
+        <a type="button" class="btn-callme mt-3 d-flex flex-column align-items-center" data-bs-toggle="modal" data-bs-target="#form-modal">
           <img class="btn-icon" src="./assets/images/img/llamame.svg" alt="Llamar">
-          <span class="ml-3"> Llámame</span>
+          <span class="ml-3">Llámame</span>
         </a>
+
 
         <!-- BOTÓN WHATS -->
         <a href="https://api.whatsapp.com/send?phone=5554840802&text=Quiero%20contratar%20mi%20paquete%20de%20streaming%20%2B%20celular%20%2B%20TV%20por%20%24335%20al%20mes"
@@ -474,9 +456,9 @@
       </div>
 
 
-            <div class="text-center pb-3 d-sm-none">
-              <small>Horario de atención de 9:00 a 21:00 hrs.</small>
-            </div>
+      <div class="text-center pb-3 d-sm-none">
+        <small>Horario de atención de 9:00 a 21:00 hrs.</small>
+      </div>
     </section>
 
     <hr class="hr-red d-block d-none d-sm-block">
@@ -490,6 +472,54 @@
   </div>
 
 
+  <!-- Modal Form Mobile -->
+
+  <div class="modal fade" id="form-modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content callme-modal no-after">
+
+        <!-- HEADER -->
+        <div>
+          <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Cerrar">
+            <img src="assets/images/img/close_modal.png" alt="close" class="iconcerrar">
+          </button>
+        </div>
+
+        <div class="modal-body text-center">
+          <p class="callme-title">
+            Déjanos tus datos y un <br>
+             asesor te contactará
+          </p>
+  
+          <!-- TU FORM -->
+          <form class="aContact modal-contact w-100" id="leadCampaignModal" autocomplete="off">
+            <div class="form-group">
+              <input type="text" id="leadNameModal" name="leadName" class="form-control lead_nombre" placeholder="Nombre" required>
+            </div>
+          
+            <div class="form-group">
+              <input type="tel" id="leadPhoneModal" name="leadPhone" class="form-control lead_numero" placeholder="Teléfono" required>
+            </div>
+          
+            <div class="form-check text-left mb-3">
+              <input class="form-check-input" type="checkbox" id="privacyCheckModal" name="privacyCheck" required>
+              <label class="form-check-label" for="privacyCheckModal">
+                He leído y acepto el
+                <a href="https://secciones.dish.com.mx/avisos-de-privacidad.html" target="_blank" rel="noopener">aviso de privacidad</a>.
+              </label>
+            </div>
+          
+            <button type="submit" class="btn-callme-submit">Contáctame</button>
+          </form>
+          
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL CANALES DE TV -->
 
   <div class="modal fade" id="CanalesdeTV" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-hidden="true">
@@ -839,9 +869,6 @@
       </div>
     </div>
   </div>
-
-
-
 
   <!-- MODAL FPOP -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -1539,28 +1566,31 @@
 
 
 
+
+
   <footer class="site-footer w-100">
     <div class="footer-top">
       <div class="footer-black__logo d-lg-none">
-      <img src="https://www.dish.com.mx/img/logo-light.7026fbf8.svg" alt="Dish">
+        <img src="https://www.dish.com.mx/img/logo-light.7026fbf8.svg" alt="Dish">
       </div>
       <div class="footer-card-gray text-center text-lg-start">
         <p>
           Con gusto te atenderemos de <br>
           <span>9:00 a 21:00 hrs.</span>
         </p>
-  
+
         <a href="tel:5555123123" class="footer-contact">
-          <img src="./assets/icons/telefono.png" alt="teléfono">
+          <img src="./assets/icons/telefono-icon.svg" alt="teléfono">
           55 55 123 123
         </a>
-  
-        <a href="#" class="footer-contact">
-          <img src="./assets/icons/whatsapp.png" alt="WhatsApp">
+
+        <a href="https://api.whatsapp.com/send?phone=5554840802&text=Quiero%20contratar%20mi%20paquete%20de%20streaming%20%2B%20celular%20%2B%20TV%20por%20%24335%20al%20mes"
+          target="_blank" class="footer-contact">
+          <img src="./assets/icons/whatsApp-icon.svg" alt="WhatsApp">
           55 5484 0802
         </a>
       </div>
-  
+
       <div class="footer-black d-flex flex-column">
         <p class="footer-title d-none d-lg-block">Descarga nuestra App</p>
         <p class="footer-title d-lg-none mb-0 text-center">Síguenos</p>
@@ -1568,25 +1598,12 @@
           <img class="d-none d-lg-block" src="https://www.dish.com.mx/img/logo-light.7026fbf8.svg" alt="Dish">
           <div class="footer-social">
             <a href="https://www.facebook.com/DishMX" target="_blank" rel="noreferrer">
-              <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="49" height="49" rx="4" fill="#D9D9D9"/>
-                <path d="M32.2962 24.9346H26.873V42H18.8252V24.9346H15V18.2589H18.8252V13.938C18.8252 10.8388 20.3238 6 26.9393 6L32.9006 6.02428V12.5057H28.5787C27.8666 12.5057 26.873 12.8537 26.873 14.3264V18.2589H33L32.2962 24.9346Z" fill="black"/>
-                </svg>
-                
+              <img src="./assets/icons/facebook-icon.svg" alt="Facebook">
+
             </a>
             <a href="https://www.youtube.com/user/MexicoDish" target="_blank" rel="noreferrer">
-              <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect width="49" height="49" rx="4" fill="#D9D9D9"/>
-                <g clip-path="url(#clip0_351_27)">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M43 16.5549C43 13.486 40.5237 11 37.4666 11H11.5333C8.47634 11 6 13.486 6 16.5549V31.4451C6 34.514 8.47634 37 11.5333 37H37.4752C40.5322 37 43.0085 34.514 43.0085 31.4451V16.5549H43ZM20.7983 30.2793V16.2977L31.3697 23.2928L20.7983 30.2878V30.2793Z" fill="black"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_351_27">
-                <rect width="37" height="26" fill="white" transform="translate(6 11)"/>
-                </clipPath>
-                </defs>
-                </svg>
-                
+              <img src="./assets/icons/youtube-icon.svg" alt="Youtube">
+
             </a>
           </div>
         </div>
@@ -1641,31 +1658,31 @@
           </div>
         </div>
 
-        <div class="footer-black__logo">
-          <img class="d-none d-lg-block" src="https://www.dish.com.mx/img/logo-light.7026fbf8.svg" alt="Dish">
-          <div class="footer-social d-none d-lg-block">
-            <a href="https://www.facebook.com/DishMX" target="_blank" rel="noreferrer">
-              <img src="assets/images/img/facebook.png" alt="Facebook">
-            </a>
-            <a href="https://www.youtube.com/user/MexicoDish" target="_blank" rel="noreferrer">
-              <img src="assets/images/img/youtube.png" alt="YouTube">
-            </a>
+          <div class="footer-black__logo">
+            <img class="d-none d-lg-block" src="https://www.dish.com.mx/img/logo-light.7026fbf8.svg" alt="Dish">
+            <div class="footer-social d-none d-lg-flex">
+              <a href="https://www.facebook.com/DishMX" target="_blank" rel="noreferrer">
+                <img src="assets/icons/facebook-icon.svg" alt="Facebook">
+              </a>
+              <a href="https://www.youtube.com/user/MexicoDish" target="_blank" rel="noreferrer">
+                <img src="assets/icons/youtube-icon.svg" alt="YouTube">
+              </a>
+            </div>
           </div>
-        </div>
 
         </div>
-  
+
 
       </div>
     </div>
-  
+
     <div class="footer-bottom">
       <p class="footer-legal">
         Derechos Reservados  Comercializadora de Frecuencias Satelitales, S. de R.L. de C.V., Dish México, S. de R. L. de C.V. 2011. Prohibida su Reproducción Total o Parcial. Todo el material, incluyendo imágenes, texto, ilustraciones, diseños, íconos, fotografías, programas, videos y cualquier otro material parte de este sitio constituyen derechos de autor, marcas, marcas tridimensionales y en general, propiedad intelectual de, controlada por o licenciada a Comercializadora de Frecuencias Satelitales, S. de R.L. de C.V., Dish México, S. de R. L. de C.V. y sus empresas afiliadas, o bien corresponden a terceros que han licenciado o concedido el uso de sus materiales a Comercializadora de Frecuencias Satelitales, S. de R.L. de C.V., Dish México, S. de R. L. de C.V. y sus empresas afiliadas, por lo que están protegidos por leyes mexicanas e internacionales. El acceso a este sitio no otorga de ninguna forma, ni deberá entenderse como si otorgara licencia, cesión o autorización de los derechos de propiedad intelectual de Comercializadora de Frecuencias Satelitales, S. de R.L. de C.V Dish México, S. de R. L. de C.V., sus empresas afiliadas, ni de los terceros propietarios de marcas, logos, nombres comerciales y cualquier otro contenido de este sitio. Precios y señales sujetos a cambio, previa autorización de la autoridad competente. Dish es una marca registrada y es utilizada conforme a la licencia de DISH Network Corporation o sus afiliadas.  
       </p>
     </div>
   </footer>
-  
+
 
 
 
@@ -1710,12 +1727,13 @@
   </script>
 
 
-<script src="./assets/js/leadValidator.js"></script>
+
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
   </script>
-
+  <script src="./assets/js/leadValidator.js"></script>
+  <script src="./assets/js/lead-init.js"></script>
 
 
 
