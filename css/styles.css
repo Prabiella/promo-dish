@@ -2241,8 +2241,8 @@ body {
   position: relative;
   border-radius: 26px;
   overflow: hidden;
-  min-height: 440px;
-  padding: 1em 0.75em;
+  min-height: 390px;
+  padding: 0em 0.75em;
   color: #fff;
   display: flex;
   flex-direction: column;
