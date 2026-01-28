@@ -455,7 +455,6 @@
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content callme-modal no-after">
 
-        <!-- HEADER -->
         <div>
           <button type="button" class="btn-close modal-close" data-bs-dismiss="modal" aria-label="Cerrar">
             <img src="assets/images/img/close_modal.png" alt="close" class="iconcerrar">
@@ -463,33 +462,45 @@
         </div>
 
         <div class="modal-body text-center">
-          <p class="callme-title">
-            Déjanos tus datos y un <br>
-             asesor te contactará
-          </p>
-  
-          <!-- TU FORM -->
-          <form class="aContact modal-contact w-100" id="leadCampaignModal" autocomplete="off">
-            <div class="form-group">
-              <input type="text" id="leadNameModal" name="leadName" class="form-control lead_nombre" placeholder="Nombre" required>
-            </div>
-          
-            <div class="form-group">
-              <input type="tel" id="leadPhoneModal" name="leadPhone" class="form-control lead_numero" placeholder="Teléfono" required>
-            </div>
-          
-            <div class="form-check text-left mb-3">
-              <input class="form-check-input" type="checkbox" id="privacyCheckModal" name="privacyCheck" required>
-              <label class="form-check-label" for="privacyCheckModal">
-                He leído y acepto el
-                <a href="https://secciones.dish.com.mx/avisos-de-privacidad.html" target="_blank" rel="noopener">aviso de privacidad</a>.
-              </label>
-            </div>
-          
-            <button type="submit" class="btn-callme-submit">Contáctame</button>
-          </form>
-          
+
+          <div id="modalFormState">
+            <p class="callme-title">
+              Déjanos tus datos y un <br>
+              asesor te contactará
+            </p>
+        
+            <form class="aContact modal-contact w-100" id="leadCampaignModal" autocomplete="off">
+              <div class="form-group">
+                <input type="text" id="leadNameModal" name="leadName" class="form-control lead_nombre" placeholder="Nombre" required>
+              </div>
+        
+              <div class="form-group">
+                <input type="tel" id="leadPhoneModal" name="leadPhone" class="form-control lead_numero" placeholder="Teléfono" required>
+              </div>
+        
+              <div class="form-check text-left mb-3">
+                <input class="form-check-input" type="checkbox" id="privacyCheckModal" name="privacyCheck" required>
+                <label class="form-check-label" for="privacyCheckModal">
+                  He leído y acepto el
+                  <a href="https://secciones.dish.com.mx/avisos-de-privacidad.html" target="_blank" rel="noopener">aviso de privacidad</a>.
+                </label>
+              </div>
+        
+              <button type="submit" class="btn-callme-submit">Contáctame</button>
+            </form>
+          </div>
+        
+          <div id="modalThankYouState" class="d-none">
+            <p class="callme-title m-0 pt-3 pb-0 fw-bold">¡Gracias!</p>
+            <p class="py-3">
+              Tus datos han sido enviados.<br>
+              Te contactaremos en breve.
+            </p>
+          </div>
+        
         </div>
+        
+        
 
       </div>
     </div>
