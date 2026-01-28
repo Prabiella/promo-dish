@@ -1,13 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-    new LeadValidator("leadCampaign");     
-    new LeadValidator("leadCampaignModal");  
+    new LeadValidator("leadCampaign");       
+    const modalValidator = new LeadValidator("leadCampaignModal");
   
     const modalEl = document.getElementById("form-modal");
-    const formEl  = document.getElementById("leadCampaignModal");
+    const formEl = document.getElementById("leadCampaignModal");
+    const formState = document.getElementById("modalFormState");
+    const thankState = document.getElementById("modalThankYouState");
   
-    if (!modalEl || !formEl) return;
+    if (!modalEl || !formEl || !formState || !thankState) return;
   
-    const resetForm = () => {
+    const resetFormUI = () => {
       formEl.reset();
   
       formEl.querySelectorAll(".is-valid, .is-invalid").forEach((el) => {
@@ -18,8 +20,26 @@ document.addEventListener("DOMContentLoaded", () => {
         el.textContent = "";
         el.style.display = "none";
       });
+  
+      thankState.classList.add("d-none");
+      formState.classList.remove("d-none");
     };
   
-    modalEl.addEventListener("hidden.bs.modal", resetForm);
+    formEl.addEventListener("submit", (e) => {
+      e.preventDefault();
+  
+      const isValid = modalValidator?.validateForm?.() ?? false;
+      if (!isValid) return;
+  
+      formState.classList.add("d-none");
+      thankState.classList.remove("d-none");
+  
+      setTimeout(() => {
+        const instance = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
+        instance.hide();
+      }, 5000);
+    });
+  
+    modalEl.addEventListener("hidden.bs.modal", resetFormUI);
   });
   

@@ -87,7 +87,6 @@ class LeadValidator {
     }
   
     setFieldState(input, isValid, message) {
-      // usa el id del input (si no tiene, usa name)
       const key = input.id || input.name;
   
       let feedback = this.form.querySelector(`.invalid-feedback[data-for="${key}"]`);
@@ -120,7 +119,6 @@ class LeadValidator {
   
       if (!feedback) {
         feedback = document.createElement("div");
-        // d-block para que se vea debajo del checkbox aunque no uses "was-validated"
         feedback.className = "invalid-feedback d-block m-0";
         formCheck.appendChild(feedback);
       }
@@ -153,7 +151,4 @@ class LeadValidator {
     }
   }
   
-  // ✅ Inicializa ambos:
-  new LeadValidator("leadCampaign");       // desktop
-  new LeadValidator("leadCampaignModal");  // modal
   
