@@ -2125,7 +2125,7 @@ body {
 }
 
 .cards-slider__item {
-  background-image: url(/assets/images/img/back-items.png);
+  background-image: url(/assets/images/img/back-items.webp);
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 26px;
