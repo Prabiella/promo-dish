@@ -1,45 +1,110 @@
 document.addEventListener("DOMContentLoaded", () => {
-    new LeadValidator("leadCampaign");       
+    const desktopValidator = new LeadValidator("leadCampaign");
     const modalValidator = new LeadValidator("leadCampaignModal");
   
     const modalEl = document.getElementById("form-modal");
-    const formEl = document.getElementById("leadCampaignModal");
+    const modalFormEl = document.getElementById("leadCampaignModal");
+  
     const formState = document.getElementById("modalFormState");
     const thankState = document.getElementById("modalThankYouState");
   
-    if (!modalEl || !formEl || !formState || !thankState) return;
+    if (!modalEl || !formState || !thankState) return;
   
-    const resetFormUI = () => {
-      formEl.reset();
+    let modalMode = "form";
+    let autoCloseTimer = null;
   
-      formEl.querySelectorAll(".is-valid, .is-invalid").forEach((el) => {
-        el.classList.remove("is-valid", "is-invalid");
-      });
+    const showState = (mode) => {
+      if (autoCloseTimer) {
+        clearTimeout(autoCloseTimer);
+        autoCloseTimer = null;
+      }
   
-      formEl.querySelectorAll(".invalid-feedback").forEach((el) => {
-        el.textContent = "";
-        el.style.display = "none";
-      });
+      if (mode === "thank") {
+        formState.classList.add("d-none");
+        thankState.classList.remove("d-none");
   
-      thankState.classList.add("d-none");
-      formState.classList.remove("d-none");
+        autoCloseTimer = setTimeout(() => {
+          const instance =
+            bootstrap.Modal.getInstance(modalEl) ||
+            bootstrap.Modal.getOrCreateInstance(modalEl);
+  
+          instance.hide();
+        }, 3000);
+      } else {
+        thankState.classList.add("d-none");
+        formState.classList.remove("d-none");
+      }
     };
   
-    formEl.addEventListener("submit", (e) => {
-      e.preventDefault();
+    const resetModalUI = () => {
+      if (autoCloseTimer) {
+        clearTimeout(autoCloseTimer);
+        autoCloseTimer = null;
+      }
   
-      const isValid = modalValidator?.validateForm?.() ?? false;
-      if (!isValid) return;
+      if (modalFormEl) {
+        modalFormEl.reset();
   
-      formState.classList.add("d-none");
-      thankState.classList.remove("d-none");
+        modalFormEl.querySelectorAll(".is-valid, .is-invalid").forEach((el) => {
+          el.classList.remove("is-valid", "is-invalid");
+        });
   
-      setTimeout(() => {
-        const instance = bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl);
-        instance.hide();
-      }, 5000);
+        modalFormEl.querySelectorAll(".invalid-feedback").forEach((el) => {
+          el.textContent = "";
+          el.style.display = "none";
+        });
+      }
+  
+      modalMode = "form";
+      showState("form");
+    };
+  
+    modalEl.addEventListener("show.bs.modal", () => {
+      showState(modalMode);
     });
   
-    modalEl.addEventListener("hidden.bs.modal", resetFormUI);
+    modalEl.addEventListener("hidden.bs.modal", resetModalUI);
+  
+    if (modalFormEl) {
+      modalFormEl.addEventListener(
+        "submit",
+        (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          e.stopImmediatePropagation();
+  
+          const isValid = modalValidator?.validateForm?.() ?? false;
+          if (!isValid) return;
+  
+          modalMode = "thank";
+          showState("thank");
+        },
+        true
+      );
+    }
+  
+    const desktopFormEl = document.getElementById("leadCampaign");
+    if (desktopFormEl) {
+      desktopFormEl.addEventListener("submit", (e) => {
+        e.preventDefault();
+  
+        const isValid = desktopValidator?.validateForm?.() ?? false;
+        if (!isValid) return;
+  
+        modalMode = "thank";
+  
+        const instance = bootstrap.Modal.getOrCreateInstance(modalEl);
+        instance.show();
+  
+        desktopFormEl.reset();
+        desktopFormEl.querySelectorAll(".is-valid, .is-invalid").forEach((el) => {
+          el.classList.remove("is-valid", "is-invalid");
+        });
+        desktopFormEl.querySelectorAll(".invalid-feedback").forEach((el) => {
+          el.textContent = "";
+          el.style.display = "none";
+        });
+      });
+    }
   });
   

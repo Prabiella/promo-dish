@@ -2387,7 +2387,7 @@ body {
   display: flex;
   gap: 1em;
   align-items: flex-end;
-  font-size: 0.9em;
+  font-size: 0.75em;
   flex-wrap: wrap;
 }
 
